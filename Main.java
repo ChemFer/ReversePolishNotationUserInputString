@@ -22,11 +22,11 @@ public class Main {
         int value;
         String operators = "+-*/";
 
-        for(String a : tokens.split("[^0-9*/+-]")){
-            if(!a.equals("+") && !a.equals("-") && !a.equals("*") && !a.equals("/")){
+        for(String a : tokens.split("[^0-9*/+-]")){ 
+            if(!a.equals("+") && !a.equals("-") && !a.equals("*") && !a.equals("/")){ //if numbers add to stack
                 stack.push(a);
             }
-            else {
+            else { // operators
                 action = a;
 
                 switch (action){
